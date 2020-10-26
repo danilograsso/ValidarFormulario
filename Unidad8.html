@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <title>Unidad8</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+</head>
+<style>
+    
+    h3{
+        margin-left: 160px;
+  
+
+    }
+ 
+    .form-control {
+        border-top-color: black;
+        border-left-color:black;
+        box-shadow: darkgrey;
+    }
+    .control-label {
+        font-size: 2rem;    
+    }
+    #submit {
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-bottom-color: black;
+        border-right-color: black;
+        box-shadow: darkgrey;   
+    }
+ 
+    
+</style>
+
+<body >
+    <div class="container">
+       
+        
+        <h3> Ingreso al Sistema</h3><br>
+    
+        <form class="form-horizontal" method="post" action="show_data.html" target="_blank" onsubmit="return e()" >
+          
+            <div class="form-group">          
+                <label class="control-label col-sm-2" for="email" >Usuario: </label>
+                <div class="col-sm-2">
+                    <input type="email" class="form-control input-sm" id="email" placeholder="usu@rio">
+                </div>
+            </div> 
+            <div class="form-group" >
+                <label class="control-label col-sm-2" for="lclave">Clave: </label>
+                    <div class="col-sm-2">
+                        <input id="lclave" class="form-control input-sm" type="password" placeholder="************" >  
+                    </div>  
+            </div>
+            <div class="form-group">  
+                <div class="col-sm-offset-2 col-sm-2"> 
+                    <input id="submit" type="submit" value="Ingresar">
+                </div>   
+            </div>
+        
+        </form>
+        
+    </div>
+
+    <script src="control.js"></script>
+</body>
+</html>
+
